@@ -1,0 +1,16 @@
+# Activar la reescritura de URLs
+RewriteEngine On
+
+# Redirigir todas las solicitudes a index.php, excepto archivos y directorios existentes
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [L]
+
+# Establecer la codificación por defecto
+AddDefaultCharset UTF-8
+
+# Proteger archivos sensibles
+<FilesMatch "\.(env|htaccess|htpasswd|ini|phps|fla|psd|log|sh)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
