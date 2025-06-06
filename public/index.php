@@ -1,5 +1,7 @@
 <?php
 define('BASE_PATH', __DIR__ . '/../');
+// Cargar la configuración
+require_once BASE_PATH . 'app/config/config.php';
 $vista = $_GET['view'] ?? null;
 
 ?>
@@ -24,7 +26,9 @@ $vista = $_GET['view'] ?? null;
     case null:
   ?>
       <h1>Este es el Index</h1>
-      <p>Dirigete al login presionando <a href="?view=login">aquí</a> o registrate <a href="?view=registro">aquí</a> </p>
+      <p>Dirigete al login presionando <a href="<?= BASE_URL ?>/login">Login</a>
+        o registrate <a href="<?= BASE_URL ?>/registro">Registro</a>
+      </p>
   <?php
       break;
     default:
