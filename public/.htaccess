@@ -6,3 +6,4 @@ RewriteCond %{REQUEST_FILENAME} !-d
 
 # Reescribe cualquier otra ruta a index.php
 RewriteRule ^(.*)$ index.php?view=$1 [QSA,L]
+#este es un comentario
