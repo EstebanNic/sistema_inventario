@@ -9,7 +9,16 @@
 
 <body>
 <h1>Ingresa al sistema</h1>
+<form action="">
 
+<label for="">Ingresa nombre de usuario o correo</label>
+<input type="text" name="usuarioLogin" id="usuarioLogin">
+<br>
+<br>
+<label for="">Ingresa la contraseña</label>
+<input type="password" name="passLogin" id="passLogin">
+
+</form>
 </body>
 
 </html>
