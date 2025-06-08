@@ -17,7 +17,12 @@
 <br>
 <label for="">Ingresa la contraseña</label>
 <input type="password" name="passLogin" id="passLogin">
-
+<br>
+<br>
+<label for="">No tengo una cuenta</label>
+<br>
+<br>
+<a href="<?= BASE_URL ?>/registro">Registrarse</a>
 </form>
 </body>
 
